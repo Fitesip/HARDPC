@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="res/css/desktop.css" media="screen">
+    <link rel="stylesheet" href="res/css/tablet.css" media="screen">
+    <link rel="stylesheet" href="res/css/phone.css" media="screen">
+</head>
+<body>
+    <header>
+        <div class="pages">
+            <div class="logoContainer">
+                <img src="res/img/HARDPC.svg" alt="" class="logo">
+                <img src="res/img/White-Arrow.svg" class="arrow" alt="">
+            </div>
+            <nav class="pagesContainer">
+                <a href="index.html">Главная</a>
+                <a href="pages/catalog.html">Каталог</a>
+                <a href="pages/constructor.html">Конструктор ПК</a>
+                <a href="pages/contacts.html">Контакты</a>
+            </nav>
+        </div>
+        <div class="numNCart">
+            <p>+7 (495) 120-35-20</p>
+            <div class="headerCartContainer" onclick="document.location.href='pages/cart.html'">
+                <p>Корзина</p>
+                <img src="res/img/Cart.svg" alt="" class="cartImage">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="promoBlock">
+            <img src="res/img/PromoImage.webp" alt="" class="promoImage">
+            <div class="promoContainer">
+                <h1>МОЩНЫЕ ИГРОВЫЕ КОМПЬЮТЕРЫ</h1>
+                <p>Подберите готовый игровой компьютер. Или закажите сборку своего идеального ПК</p>
+                <div class="buttonsContainer">
+                    <button class="viewCatalog" onclick="document.location.href='pages/catalog.html'">Посмотреть каталог</button>
+                    <button class="orderAssembly" onclick="document.querySelector('.orderPCFormContainer').scrollIntoView({behavior: 'smooth'})">Заказать сборку</button>
+                </div>
+            </div>
+        </div>
+        <div class="PCInStock">
+            <h1>ПК В НАЛИЧИИ</h1>
+            <p>Передовые технологии 2025 года в первоклассном дизайне</p>
+            <div class="wrapper">
+                <div class="PCsContainer">
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC1.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №1</h2>
+                    <div class="priceNButton">
+                        <p>100 000 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Охлаждение</p>
+                                <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Оперативная память</p>
+                                <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>SSD</p>
+                                <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Блок питания</p>
+                                <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Корпус</p>
+                                <h3>Deepcool CC360 ARGB Black</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC2.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №2</h2>
+                    <div class="priceNButton">
+                        <p>75 000 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Охлаждение</p>
+                                <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Оперативная память</p>
+                                <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>SSD</p>
+                                <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Блок питания</p>
+                                <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Корпус</p>
+                                <h3>Deepcool CC360 ARGB Black</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC3.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №3</h2>
+                    <div class="priceNButton">
+                        <p>65 000 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Охлаждение</p>
+                                <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Оперативная память</p>
+                                <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>SSD</p>
+                                <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Блок питания</p>
+                                <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Корпус</p>
+                                <h3>Deepcool CC360 ARGB Black</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC3.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №4</h2>
+                    <div class="priceNButton">
+                        <p>102 000 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Охлаждение</p>
+                                <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Оперативная память</p>
+                                <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>SSD</p>
+                                <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Блок питания</p>
+                                <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Корпус</p>
+                                <h3>Deepcool CC360 ARGB Black</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC3.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №5</h2>
+                    <div class="priceNButton">
+                        <p>41 423 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Охлаждение</p>
+                                <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Оперативная память</p>
+                                <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>SSD</p>
+                                <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Блок питания</p>
+                                <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Корпус</p>
+                                <h3>Deepcool CC360 ARGB Black</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC3.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №6</h2>
+                    <div class="priceNButton">
+                        <p>75 000 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Охлаждение</p>
+                                <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Оперативная память</p>
+                                <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>SSD</p>
+                                <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Блок питания</p>
+                                <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Корпус</p>
+                                <h3>Deepcool CC360 ARGB Black</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC3.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №7</h2>
+                    <div class="priceNButton">
+                        <p>75 000 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Охлаждение</p>
+                                <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Оперативная память</p>
+                                <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>SSD</p>
+                                <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Блок питания</p>
+                                <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Корпус</p>
+                                <h3>Deepcool CC360 ARGB Black</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC3.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №8</h2>
+                    <div class="priceNButton">
+                        <p>75 000 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Охлаждение</p>
+                                <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Оперативная память</p>
+                                <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>SSD</p>
+                                <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Блок питания</p>
+                                <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Корпус</p>
+                                <h3>Deepcool CC360 ARGB Black</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC3.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №9</h2>
+                    <div class="priceNButton">
+                        <p>75 000 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Охлаждение</p>
+                                <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Оперативная память</p>
+                                <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>SSD</p>
+                                <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Блок питания</p>
+                                <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Корпус</p>
+                                <h3>Deepcool CC360 ARGB Black</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC3.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №10</h2>
+                    <div class="priceNButton">
+                        <p>75 000 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Охлаждение</p>
+                                <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Оперативная память</p>
+                                <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>SSD</p>
+                                <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Блок питания</p>
+                                <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Корпус</p>
+                                <h3>Deepcool CC360 ARGB Black</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC3.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №11</h2>
+                    <div class="priceNButton">
+                        <p>75 000 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Охлаждение</p>
+                                <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Оперативная память</p>
+                                <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>SSD</p>
+                                <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Блок питания</p>
+                                <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Корпус</p>
+                                <h3>Deepcool CC360 ARGB Black</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC3.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №12</h2>
+                    <div class="priceNButton">
+                        <p>75 000 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Охлаждение</p>
+                                <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Оперативная память</p>
+                                <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>SSD</p>
+                                <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Блок питания</p>
+                                <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Корпус</p>
+                                <h3>Deepcool CC360 ARGB Black</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC3.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №13</h2>
+                    <div class="priceNButton">
+                        <p>75 000 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Охлаждение</p>
+                                <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Оперативная память</p>
+                                <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>SSD</p>
+                                <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Блок питания</p>
+                                <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Корпус</p>
+                                <h3>Deepcool CC360 ARGB Black</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC3.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №14</h2>
+                    <div class="priceNButton">
+                        <p>75 000 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Охлаждение</p>
+                                <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Оперативная память</p>
+                                <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>SSD</p>
+                                <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Блок питания</p>
+                                <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Корпус</p>
+                                <h3>Deepcool CC360 ARGB Black</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div style="transform: translateX(0px)" class="PC">
+                    <div class="PCImageContainer">
+                        <div class="glow"></div>
+                        <img src="res/img/PC3.webp" alt="" class="PCImage">
+                    </div>
+                    <h2>Сборка №15</h2>
+                    <div class="priceNButton">
+                        <p>75 000 ₽</p>
+                        <button class="inCart">В корзину</button>
+                    </div>
+                    <div class="allCharacteristics">
+                        <div class="characteristic">
+                            <img src="res/img/GPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Видеокарта</p>
+                                <h3>GeForce RTX 4060 Dual [8GB, 3072 CUDA]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/CPU.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Процессор</p>
+                                <h3>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                            <img src="res/img/Motherboard.svg" alt="" class="characteristicComponentImage">
+                            <div class="characteristicComponentName">
+                                <p>Материнская плата</p>
+                                <h3>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</h3>
+                            </div>
+                        </div>
+                        <div class="characteristic">
+                                <img src="res/img/Cooler.svg" alt="" class="characteristicComponentImage">
+                                <div class="characteristicComponentName">
+                                    <p>Охлаждение</p>
+                                    <h3>ID-Cooling SE-224-XTS ARGB Black</h3>
+                                </div>
+                            </div>
+                            <div class="characteristic">
+                                <img src="res/img/RAM.svg" alt="" class="characteristicComponentImage">
+                                <div class="characteristicComponentName">
+                                    <p>Оперативная память</p>
+                                    <h3>16GB ADATA XPG SPECTRIX D50 RGB Black [DDR4, 3600MHz, 2x8GB]</h3>
+                                </div>
+                            </div>
+                            <div class="characteristic">
+                                <img src="res/img/SSD.svg" alt="" class="characteristicComponentImage">
+                                <div class="characteristicComponentName">
+                                    <p>SSD</p>
+                                    <h3>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</h3>
+                                </div>
+                            </div>
+                            <div class="characteristic">
+                                <img src="res/img/PSU.svg" alt="" class="characteristicComponentImage">
+                                <div class="characteristicComponentName">
+                                    <p>Блок питания</p>
+                                    <h3>500W Deepcool PK500D [80+ Bronze]</h3>
+                                </div>
+                            </div>
+                            <div class="characteristic">
+                                <img src="res/img/Case.svg" alt="" class="characteristicComponentImage">
+                                <div class="characteristicComponentName">
+                                    <p>Корпус</p>
+                                    <h3>Deepcool CC360 ARGB Black</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagesController">
+                <div class="pagesCounter">
+                    <h3 id="counter">1</h3>
+                    <p id="maxPages">из 5</p>
+                </div>
+                <div class="pagesControllerButtons">
+                    <button class="pagesControllerButton" disabled id="leftScrollButton" onclick="leftScroll()" aria-label="arrowLeft">
+                        <img src="res/img/Arrow.svg" alt="" class="buttonArrow" id="left">
+                    </button>
+                    <button class="pagesControllerButton" id="rightScrollButton" onclick="rightScroll()" aria-label="arrowRight">
+                        <img src="res/img/Arrow.svg" alt="" class="buttonArrow" id="right">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="orderPCFormContainer">
+            <h1>ЗАКАЗАТЬ СБОРКУ ПК</h1>
+            <p>Выполним сборку с нуля для вас и ваших потребностей в кратчайший срок</p>
+            <div class="orderPCForm">
+                <div class="smallFormItem">
+                    <p>Имя</p>
+                    <input type="text" placeholder="Введите имя">
+                </div>
+                <div class="smallFormItem">
+                    <p>Телефон</p>
+                    <input type="text" placeholder="Введите телефон">
+                </div>
+                <div class="smallFormItem">
+                    <p>Почта</p>
+                    <input type="text" placeholder="Введите почту">
+                </div>
+                <div class="smallFormItem">
+                    <p>Цель сборки</p>
+                    <input type="text" placeholder="Выберите цель сборки">
+                </div>
+                <div class="smallFormItem">
+                    <p>Бюджет</p>
+                    <input type="text" placeholder="Выберите диапазон бюджета">
+                </div>
+                <div class="smallFormItem">
+                    <p>Дата получения</p>
+                    <input type="text" placeholder="Выберите дату получения">
+                </div>
+                <div class="bigFormItem">
+                    <p>Сообщение</p>
+                    <textarea placeholder="Уточните важные для вас детали"></textarea>
+                </div>
+            </div>
+            <div class="termsAndConditions">
+                <div class="checkboxContainer">
+                    <div class="checkbox">
+                        <img src="res/img/CheckboxMark.svg" alt="" class="checkboxMark">
+                    </div>
+                    <p>Я согласен с политикой обработки персональных данных</p>
+                </div>
+                <button class="sendOrder">Отправить заявку</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="res/img/HARDPC.svg" alt="" class="logo">
+        <div class="numNCart">
+            <p>+7 (495) 120-35-20</p>
+        </div>
+    </footer>
+</body>
+<script src="res/js/scrollPages.js"></script>
+<script src="res/js/checkbox.js"></script>
+<script src="res/js/addToCart.js"></script>
+<script src="res/js/pages.js"></script>
+</html>

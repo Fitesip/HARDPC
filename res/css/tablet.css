@@ -1,0 +1,141 @@
+@media screen and (max-width: 1024px) {
+    header {
+        width: 738px;
+    }
+    .promoImage {
+        height: 1024px;
+    }
+    .promoBlock {
+        width: 738px;
+    }
+    main {
+        width: 738px;
+    }
+    .promoContainer h1 {
+        font-size: 48px;
+    }
+    .promoContainer p {
+        text-align: center;
+        max-width: 430px;
+    }
+    .PCInStock {
+        margin-top: 100px;
+    }
+    .PCInStock h1 {
+        font-size: 40px;
+    }
+    .PCsContainer {
+        gap: 10px;
+    }
+    .wrapper {
+        max-width: 738px;
+        padding: 100px 0 0 0;
+    }
+    .characteristic {
+        width: 738px;
+    }
+    .pagesController {
+        width: 738px;
+    }
+    .orderPCFormContainer h1 {
+        font-size: 40px;
+    }
+    .orderPCForm {
+        width: 738px;
+        gap: 16px;
+    }
+    .orderPCFormContainer {
+        width: 738px;
+    }
+    .smallFormItem {
+        width: 361px;
+    }
+    .bigFormItem textarea {
+        height: 152px;
+    }
+    .termsAndConditions p {
+        max-width: 432px;
+    }
+    footer {
+        width: 738px;
+    }
+    .naming {
+        max-width: 620px;
+    }
+    .namingQty {
+        margin-left: 205px;
+    }
+    .namingPrice {
+        margin-left: 157px;
+    }
+    .product {
+        width: 620px;
+    }
+    .productName img {
+        width: 180px;
+        height: 185px;
+    }
+    .productName {
+        font-size: 24px;
+        gap: 15px;
+    }
+    .delete {
+        margin-left: 695px;
+    }
+    .cart {
+        width: 620px;
+    }
+    .qtyNPrice {
+        width: 352px;
+    }
+    .PCsContainerInCatalog {
+        width: 738px;
+    }
+    .mapContainer img {
+        width: 630px;
+        height: 400px;
+    }
+    .constructorElement {
+        width: 738px;
+    }
+    .constructorElement img {
+        width: 200px;
+        height: 200px;
+    }
+    .constructorElementCharacteristicsContainer p {
+        font-size: 16px;
+    }
+    .constructorElementCharacteristicsContainer h3 {
+        font-size: 12px;
+    }
+    .constructorElementText {
+        max-width: 500px;
+    }
+    .notFound {
+        width: 1024px;
+        height: 70svh;
+    }
+    .error {
+        font-size: 400px;
+    }
+    .okak {
+        bottom: 10px;
+        left: 50%;
+        translate: -50% 0;
+        font-weight: 900;
+        font-size: 75px;
+    }
+    @keyframes errorAnim {
+        100% {
+            transform: translate(-50%, -230px);
+        }
+    }
+    @keyframes catAnim {
+        0% {
+            translate: 0 50%;
+        }
+        100% {
+            translate: 0 0;
+        }
+    }
+}

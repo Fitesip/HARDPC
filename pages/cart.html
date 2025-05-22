@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../res/css/desktop.css">
+    <link rel="stylesheet" href="../res/css/tablet.css">
+    <link rel="stylesheet" href="../res/css/phone.css">
+</head>
+<body>
+    <header>
+        <div class="pages">
+            <div class="logoContainer">
+                <img src="../res/img/HARDPC.svg" alt="" class="logo">
+                <img src="../res/img/White-Arrow.svg" class="arrow" alt="">
+            </div>
+            <nav class="pagesContainer">
+                <a href="../index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="constructor.html">Конструктор ПК</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+        </div>
+        <div class="numNCart">
+            <p>+7 (495) 120-35-20</p>
+            <div class="headerCartContainer" onclick="document.location.href='cart.html'">
+                <p>Корзина</p>
+                <img src="../res/img/Cart.svg" alt="" class="cartImage">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cart">
+            <h1>КОРЗИНА</h1>
+            <div class="naming">
+                <p>ТОВАР</p>
+                <p class="namingQty">КОЛИЧЕСТВО</p>
+                <p class="namingPrice">ЦЕНА</p>
+            </div>
+            <div class="products">
+                <div class="empty">
+                    <h1>Корзина пуста</h1>
+                </div>
+            </div>
+            <div class="order">
+                <p class="totalPrice">0 ₽</p>
+                <button>Перейти к оформлению</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="../res/img/HARDPC.svg" alt="" class="logo">
+        <div class="numNCart">
+            <p>+7 (495) 120-35-20</p>
+        </div>
+    </footer>
+</body>
+<script src="../res/js/cart.js"></script>
+<script src="../res/js/pages.js"></script>
+</html>

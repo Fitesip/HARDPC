@@ -1,0 +1,888 @@
+@font-face {
+    font-family: Oswald;
+    src: url("../fonts/Oswald/Oswald.ttf");
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/Montserrat.ttf");
+}
+*, html {
+    margin: unset;
+}
+p, h2, h3, a, button {
+    line-height: 150%;
+}
+h1 {
+    line-height: 120%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1D1D1D;
+}
+.menu {
+    display: none;
+}
+.qtyNPrice h3 {
+    display: none;
+}
+.pages {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+.logoContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.pagesContainer {
+    overflow: hidden;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-out;
+    border-left: 2px solid #F4F4F4;
+    padding-left: 5px;
+    z-index: 100;
+}
+.pagesContainer a {
+    text-decoration: none;
+    color: #F4F4F4;
+    font-size: 20px;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+}
+.arrow {
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+}
+header {
+    width: 1410px;
+    height: 48px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 105px;
+    height: 48px;
+}
+.numNCart {
+    display: flex;
+    gap: 25px;
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F4F4F4;
+    align-items: center;
+}
+.headerCartContainer {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+.cartImage {
+    width: 30px;
+    height: 30px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+}
+.promoBlock {
+    display: flex;
+    justify-content: center;
+    margin-top: 386px;
+    width: 1440px;
+    height: 626px;
+}
+.promoImage {
+    position: absolute;
+    max-width: 1920px;
+    width: 100%;
+    height: 1080px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.promoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.promoContainer h1 {
+    font-family: Oswald, serif;
+    font-size: 64px;
+    font-weight: 600;
+    color: #F4F4F4;
+}
+.promoContainer p {
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F4F4F4;
+}
+.buttonsContainer {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+}
+.viewCatalog {
+    border: none;
+    background: #74ABFF;
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1D1D1D;
+    padding: 18px 24px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.viewCatalog:hover {
+    background: #F4F4F4;
+}
+.orderAssembly {
+    border: none;
+    background: #F4F4F4;
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1D1D1D;
+    padding: 18px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.orderAssembly:hover {
+    background: #74ABFF;
+}
+.PCInStock {
+    margin-top: 120px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+.PCInStock h1 {
+    font-family: Oswald, serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #F4F4F4;
+}
+.PCInStock p {
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F4F4F4;
+}
+.wrapper {
+    overflow: hidden;
+    max-width: 1400px;
+    padding-top: 95px;
+    padding-left: 50px;
+}
+.PCsContainer {
+    display: flex;
+    gap: 97.5px;
+}
+.PC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    transition: 0.7s;
+}
+.PC h2 {
+    font-family: Montserrat, serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #F4F4F4;
+    margin-top: 15px;
+}
+.glow {
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+    filter: blur(50px);
+    width: 200px;
+    height: 200px;
+    background: #74ABFF;
+}
+.PCImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.PCImage {
+    width: 280px;
+    height: 280px;
+}
+.priceNButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+}
+.priceNButton p {
+    color: #F4F4F4;
+}
+.inCart {
+    color: #1D1D1D;
+    border: none;
+    background: #74ABFF;
+    border-radius: 10px;
+    padding: 14px 24px;
+    font-size: 18px;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.inCart:hover {
+    background: #F4F4F4;
+}
+.allCharacteristics {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+}
+.characteristic {
+    display: flex;
+    padding: 25px 0;
+    gap: 25px;
+    align-items: center;
+    width: 385px;
+    border-top: 1px solid #7A7A7A;
+}
+.characteristicComponentImage {
+    width: 20px;
+    height: 20px;
+}
+.characteristicComponentName {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+}
+.characteristicComponentName p {
+    font-size: 14px;
+    color: #ABABAB;
+}
+.characteristicComponentName h3 {
+    color: #F4F4F4;
+    font-size: 18px;
+    font-weight: 400;
+}
+.pagesController {
+    display: flex;
+    width: 1350px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #7A7A7A;
+    padding-top: 20px;
+}
+.pagesCounter {
+    display: flex;
+    gap: 5px;
+    font-family: Montserrat, serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #B3B3B3;
+    align-items: center;
+}
+.pagesCounter h3 {
+    color: #F4F4F4;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -3px;
+}
+.pagesControllerButtons {
+    display: flex;
+    gap: 10px;
+}
+.pagesControllerButton {
+    border-radius: 100%;
+    border: none;
+    background: #74ABFF;
+    padding: 14px;
+    height: 58px;
+    transition: 0.3s;
+}
+.pagesControllerButton:disabled {
+    background: #466799;
+}
+.pagesControllerButton:hover {
+    background: #F4F4F4;
+}
+.pagesControllerButton:disabled:hover {
+    background: #7A7A7A;
+}
+.buttonArrow {
+    width: 30px;
+    height: 30px;
+}
+
+#left {
+    rotate: 180deg;
+}
+.orderPCFormContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 1350px;
+    align-items: center;
+    margin-top: 120px;
+}
+.orderPCFormContainer h1 {
+    font-family: Oswald, serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #F4F4F4;
+}
+.orderPCFormContainer p {
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F4F4F4;
+}
+.orderPCForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 80px;
+}
+.smallFormItem {
+    width: 433.33px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.smallFormItem p {
+    font-family: Montserrat, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #F4F4F4;
+}
+.smallFormItem input {
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    color: #1D1D1D;
+    font-size: 18px;
+    padding: 24px 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+.bigFormItem {
+    width: 1350px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.bigFormItem p {
+    font-family: Montserrat, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #F4F4F4;
+}
+.bigFormItem textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    height: 212px;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    color: #1D1D1D;
+    font-size: 18px;
+    padding: 24px 20px;
+    border-radius: 8px;
+}
+.termsAndConditions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.checkboxContainer {
+    display: flex;
+    gap: 10px;
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F4F4F4;
+    align-items: center;
+}
+.checkbox {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    background: #F4F4F4;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checked {
+    background: #74ABFF;
+}
+.checkboxMark {
+    display: none;
+}
+.sendOrder {
+    padding: 18px 24px;
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1D1D1D;
+    background: #74ABFF;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+}
+.sendOrder:hover {
+    background: #F4F4F4;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    padding: 24px 0;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    border-top: 1px solid #7A7A7A;
+
+}
+.showAllCharacteristicsButton {
+    display: flex;
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F4F4F4;
+    gap: 25px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordionArrowImage {
+    width: 30px;
+    height: 30px;
+    transition: 0.7s ease-in-out;
+}
+.PCsContainerInCatalog {
+    margin-top: 120px;
+    display: flex;
+    width: 1440px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 70px;
+}
+.constructor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+.constructor h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #F4F4F4;
+    font-family: Oswald, serif;
+    text-align: center;
+}
+.constructorElement {
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+    width: 1300px;
+}
+.constructorElement h1 {
+    text-align: unset;
+    font-family: Montserrat, serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+.constructorElement img {
+    width: 400px;
+    height: 400px;
+}
+.constructorElementText {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    max-width: 850px;
+    font-family: Montserrat, serif;
+}
+.constructorElementCharacteristics {
+    margin-top: 23.5px;
+    margin-bottom: 23.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.constructorElementCharacteristics h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #74ABFF;
+}
+.constructorElementCharacteristics h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #F4F4F4;
+}
+.constructorElementCharacteristics h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7A7A7A;
+}
+.constructorElementText p {
+    color: #F4F4F4;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.select {
+    padding: 18px 72px;
+    background: #74ABFF;
+    border: none;
+    border-radius: 10px;
+    width: max-content;
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1D1D1D;
+}
+.change {
+    padding: 18px 66px;
+    background: #A1A1A1;
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1D1D1D;
+}
+.constructorElementCharacteristicsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.constructorElementCharacteristicsContainer p {
+    width: 405px;
+    color: #F4F4F4;
+    font-size: 20px;
+    font-weight: 600;
+}
+.constructorCharacteristic {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    border-bottom: 1px solid #7A7A7A;
+}
+.constructorCharacteristic p {
+    text-align: right;
+}
+.total {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: Montserrat, serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #F4F4F4;
+}
+.total button {
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1D1D1D;
+    padding: 18px 24px;
+    background: #74ABFF;
+    border: none;
+    border-radius: 10px;
+    width: max-content;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.contacts h1 {
+    font-family: Oswald, serif;
+    font-size: 48px;
+    color: #F4F4F4;
+    font-weight: 600;
+}
+.mapContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 500;
+    gap: 10px;
+    color: #F4F4F4;
+}
+.cart {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 1410px;
+}
+.cart h1 {
+    font-family: Oswald, serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #F4F4F4;
+}
+.products {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.empty {
+    display: none;
+    flex-direction: column;
+    width: 1410px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 162px;
+}
+.naming {
+    margin-top: 80px;
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid #888888;
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #F4F4F4;
+    max-width: 1202px;
+}
+.order {
+    align-self: center;
+    margin-top: 50px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.order p {
+    font-family: Montserrat, serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #F4F4F4;
+}
+.order button {
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    padding: 18px 16px;
+    background: #74ABFF;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+}
+.namingQty {
+    margin-left: 695px;
+}
+.namingPrice {
+    margin-left: 250px;
+}
+.product {
+    display: flex;
+    width: 1202px;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    max-height: 253px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.productName {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    font-family: Montserrat, serif;
+    font-weight: 600;
+    color: #F4F4F4;
+}
+.productName img {
+    width: 200px;
+    height: 205px;
+}
+.qtyNPrice {
+    display: flex;
+    width: 441px;
+    justify-content: space-between;
+    align-items: center;
+}
+.qty {
+    display: flex;
+    gap: 15px;
+    font-family: Montserrat, serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #F4F4F4;
+    align-items: center;
+}
+.qty button {
+    max-width: 58px;
+    max-height: 58px;
+    background: #74ABFF;
+    border: none;
+    padding: 14px;
+    border-radius: 100%;
+    z-index: 2;
+    transition: 0.5s;
+}
+.qty button:hover {
+    background: #F4F4F4;
+}
+.qty button:disabled:hover {
+    background: #7A7A7A;
+}
+.price {
+    font-family: Montserrat, serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #F4F4F4;
+}
+.delete {
+    position: absolute;
+    max-width: 58px;
+    max-height: 58px;
+    background: #FF0000;
+    border: none;
+    padding: 14px;
+    border-radius: 100%;
+    margin-left: 1352px;
+    z-index: 1;
+    transition: 0.5s;
+}
+.delete img {
+    transition: 0.3s;
+}
+.delete:hover {
+    img {
+        rotate: -45deg;
+    }
+    .secondMinus {
+        rotate: 45deg;
+    }
+}
+
+.secondMinus {
+    position: absolute;
+    left: 14px;
+}
+
+button:disabled {
+    background: #466799;
+}
+.constructorPopup {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    backdrop-filter: blur(10px);
+    padding: 35px 50px;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    max-height: 100%;
+    row-gap: 20px;
+    column-gap: 70px;
+}
+.constructorPopupContent img {
+    width: 400px;
+    height: 400px;
+}
+.constructorPopupContent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.constructorPopupContent button {
+    padding: 14px 24px;
+    font-size: 18px;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    background: #74ABFF;
+    border: none;
+    border-radius: 10px;
+    width: max-content;
+}
+
+.notFound {
+    position: relative;
+    height: 80svh;
+    width: 1440px;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 18px;
+}
+.catImage {
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+    max-width: 1920px;
+    margin: 0 auto;
+    animation: catAnim 1.5s ease forwards;
+}
+.catImage img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes catAnim {
+    0% {
+        translate: 0 50%;
+    }
+    100% {
+        translate: 0 0;
+    }
+}
+.okak {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    translate: -50% 0;
+    font-weight: 900;
+    font-size: 105px;
+}
+.error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 650px;
+    font-weight: 900;
+    transform: translate(-50%, 800px);
+    animation: errorAnim 1.5s ease forwards;
+}
+
+
+@keyframes errorAnim {
+    100% {
+        transform: translate(-50%, -400px);
+    }
+}

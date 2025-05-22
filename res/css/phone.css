@@ -1,0 +1,188 @@
+@media screen and (max-width: 480px) {
+    header {
+        width: 420px;
+    }
+    .menu {
+        display: unset;
+    }
+    .numNCart p {
+        display: none;
+    }
+    .promoContainer h1 {
+        font-size: 40px;
+        max-width: 400px;
+        text-align: center;
+    }
+    .buttonsContainer {
+        flex-direction: column;
+    }
+    .promoBlock {
+        max-width: 420px;
+        margin-top: 250px;
+    }
+    .promoImage {
+        height: 896px;
+    }
+    .PCInStock {
+        margin-top: 80px;
+        gap: 15px;
+    }
+    .PCInStock h1 {
+        font-size: 36px;
+    }
+    .PCInStock p {
+        max-width: 450px;
+        text-align: center;
+    }
+    .PCsContainer {
+        max-width: 420px;
+    }
+    .PCsContainerInCatalog {
+        max-width: 420px;
+    }
+    .characteristic {
+        max-width: 420px;
+    }
+    .pagesController {
+        max-width: 420px;
+    }
+    .characteristicComponentName p {
+        text-align: left !important;
+    }
+    .orderPCFormContainer h1 {
+        font-size: 36px;
+    }
+    .orderPCFormContainer p {
+        max-width: 450px;
+        text-align: center;
+    }
+    .smallFormItem {
+        width: 420px;
+    }
+    .orderPCForm {
+        width: 420px;
+    }
+    .orderPCForm p {
+        text-align: left;
+    }
+    .orderPCFormContainer p {
+        max-width: 380px;
+        text-align: left;
+    }
+    .termsAndConditions {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .sendOrder {
+        width: 420px;
+    }
+    footer {
+        width: 420px;
+    }
+    footer .numNCart p {
+        display: unset;
+    }
+    .constructor h1 {
+        font-size: 36px;
+    }
+    .constructorElement {
+        width: 420px;
+    }
+    .constructorElement img {
+        width: 150px;
+        height: 150px;
+    }
+    .constructorElement h1 {
+        font-size: 32px;
+    }
+    .constructorElementText p {
+        font-size: 24px;
+    }
+    .constructorElementCharacteristics h1 {
+        font-size: 24px;
+    }
+    .constructorElementCharacteristicsContainer h3 {
+        font-size: 8px;
+    }
+    .constructorElementCharacteristicsContainer p {
+        font-size: 10px;
+    }
+    .constructorElementText {
+        max-width: 250px;
+    }
+
+    .total {
+        font-size: 16px;
+        align-items: center;
+    }
+    .total button {
+        padding: 12px 18px;
+        font-size: 12px;
+    }
+    main {
+        width: 420px;
+    }
+    .cart {
+        width: 410px;
+    }
+    .naming {
+        display: none;
+    }
+    .product {
+        flex-direction: column;
+        width: 410px;
+        max-height: max-content;
+    }
+    .qtyNPrice {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .qtyNPrice h3 {
+        display: unset;
+        font-family: Montserrat, serif;
+        font-size: 14px;
+        color: #B3B3B3;
+        font-weight: 500;
+    }
+    .price {
+        margin-top: 10px;
+    }
+    .order {
+        flex-direction: column;
+    }
+    .delete {
+        margin-left: 320px;
+        margin-top: 236px;
+    }
+    .mapContainer img {
+        width: 400px;
+        height: 250px;
+    }
+    .notFound {
+        width: 420px;
+        height: 80svh;
+    }
+    .error {
+        font-size: 170px;
+    }
+    .okak {
+        bottom: 10px;
+        left: 50%;
+        translate: -50% 0;
+        font-weight: 900;
+        font-size: 35px;
+    }
+    @keyframes errorAnim {
+        100% {
+            transform: translate(-50%, -110px);
+        }
+    }
+    @keyframes catAnim {
+        0% {
+            translate: 0 50%;
+        }
+        100% {
+            translate: 0 -100%;
+        }
+    }
+}

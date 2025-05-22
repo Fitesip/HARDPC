@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../res/css/desktop.css">
+    <link rel="stylesheet" href="../res/css/tablet.css">
+    <link rel="stylesheet" href="../res/css/phone.css">
+</head>
+<body>
+<div class="casesPopup constructorPopup">
+    <div class="constructorPopupContent">
+        <img src="../res/img/cases/ExeGate%20BA-201.png" alt="">
+        <button onclick="selectCase(0)">Выбрать</button>
+    </div>
+    <div class="constructorPopupContent">
+        <img src="../res/img/cases/ExeGate%20BA-202.png" alt="">
+        <button onclick="selectCase(1)">Выбрать</button>
+    </div>
+    <div class="constructorPopupContent">
+        <img src="../res/img/cases/ARDOR%20GAMING%20Mystic.png" alt="">
+        <button onclick="selectCase(2)">Выбрать</button>
+    </div>
+    <div class="constructorPopupContent">
+        <img src="../res/img/cases/PowerCase%20Mistral%20Micro%20Z3W.png" alt="">
+        <button onclick="selectCase(3)">Выбрать</button>
+    </div>
+    <div class="constructorPopupContent">
+        <img src="../res/img/cases/PowerCase%20Vision%20Micro%20M.png" alt="">
+        <button onclick="selectCase(4)">Выбрать</button>
+    </div>
+    <div class="constructorPopupContent">
+        <img src="../res/img/cases/PCCooler%20C3D310%20BK.png" alt="">
+        <button onclick="selectCase(5)">Выбрать</button>
+    </div>
+    <div class="constructorPopupContent">
+        <img src="../res/img/cases/Оклик%20OCC-MN302F.png" alt="">
+        <button onclick="selectCase(6)">Выбрать</button>
+    </div>
+</div>
+<div class="motherboardsPopup constructorPopup">
+    <div class="constructorPopupContent">
+        <img src="../res/img/motherboards/MSI%20MEG%20X870E%20GODLIKE.png" alt="">
+        <button onclick="selectMotherboard(0)">Выбрать</button>
+    </div>
+</div>
+<div class="cpusPopup constructorPopup">
+    <div class="constructorPopupContent">
+        <img src="../res/img/cpus/AMD%20Ryzen%209%209950X3D.png" alt="">
+        <button onclick="selectCPU(0)">Выбрать</button>
+    </div>
+</div>
+<div class="gpusPopup constructorPopup">
+    <div class="constructorPopupContent">
+        <img src="../res/img/gpus/MSI%20GeForce%20RTX%205090%20VANGUARD%20SOC.png" alt="">
+        <button onclick="selectGPU(0)">Выбрать</button>
+    </div>
+</div>
+<div class="ramsPopup constructorPopup">
+    <div class="constructorPopupContent">
+        <img src="../res/img/rams/Kingston%20FURY%20Beast%20White%20RGB.png" alt="">
+        <button onclick="selectRAM(0)">Выбрать</button>
+    </div>
+</div>
+<div class="ssdsPopup constructorPopup">
+    <div class="constructorPopupContent">
+        <img src="../res/img/ssds/ADATA%20XPG%20BLADE%20S70.png" alt="">
+        <button onclick="selectSSD(0)">Выбрать</button>
+    </div>
+</div>
+<div class="psusPopup constructorPopup">
+    <div class="constructorPopupContent">
+        <img src="../res/img/psus/ADATA%20XPG%20FUSION%201600%20TITANIUM.png" alt="">
+        <button onclick="selectPSU(0)">Выбрать</button>
+    </div>
+</div>
+    <header>
+        <div class="pages">
+            <div class="logoContainer">
+                <img src="../res/img/HARDPC.svg" alt="" class="logo">
+                <img src="../res/img/White-Arrow.svg" class="arrow" alt="">
+            </div>
+            <nav class="pagesContainer">
+                <a href="../index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="constructor.html">Конструктор ПК</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+        </div>
+        <div class="numNCart">
+            <p>+7 (495) 120-35-20</p>
+            <div class="headerCartContainer" onclick="document.location.href='cart.html'">
+                <p>Корзина</p>
+                <img src="../res/img/Cart.svg" alt="" class="cartImage">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="constructor">
+            <h1>КОНСТРУКТОР ПК</h1>
+            <div class="constructorElement case">
+                <div class="constructorElementText">
+                    <h1>Корпус ПК</h1>
+                    <div class="constructorElementCharacteristics">
+
+                        <div class="constructorElementCharacteristicsContainer">
+
+                        </div>
+                    </div>
+                    <p class="constructorPrice"></p>
+                    <button class="select" onclick="casesPopup()">Выбрать</button>
+                </div>
+                <img src="../res/img/Empty.png" alt="">
+            </div>
+            <div class="constructorElement motherboard">
+                <div class="constructorElementText">
+                    <h1>Материнская плата</h1>
+                    <div class="constructorElementCharacteristics">
+
+                        <div class="constructorElementCharacteristicsContainer">
+
+                        </div>
+                    </div>
+                    <p class="constructorPrice"></p>
+                    <button class="select" onclick="motherboardsPopup()">Выбрать</button>
+                </div>
+                <img src="../res/img/Empty.png" alt="">
+            </div>
+            <div class="constructorElement cpu">
+                <div class="constructorElementText">
+                    <h1>Процессор</h1>
+                    <div class="constructorElementCharacteristics">
+
+                        <div class="constructorElementCharacteristicsContainer">
+
+                        </div>
+                    </div>
+                    <p class="constructorPrice"></p>
+                    <button class="select" onclick="cpusPopup()">Выбрать</button>
+                </div>
+                <img src="../res/img/Empty.png" alt="">
+            </div>
+            <div class="constructorElement gpu">
+                <div class="constructorElementText">
+                    <h1>Видеокарта</h1>
+                    <div class="constructorElementCharacteristics">
+
+                        <div class="constructorElementCharacteristicsContainer">
+
+                        </div>
+                    </div>
+                    <p class="constructorPrice"></p>
+                    <button class="select" onclick="gpusPopup()">Выбрать</button>
+                </div>
+                <img src="../res/img/Empty.png" alt="">
+            </div>
+            <div class="constructorElement ram">
+                <div class="constructorElementText">
+                    <h1>ОЗУ</h1>
+                    <div class="constructorElementCharacteristics">
+
+                        <div class="constructorElementCharacteristicsContainer">
+
+                        </div>
+                    </div>
+                    <p class="constructorPrice"></p>
+                    <button class="select" onclick="ramsPopup()">Выбрать</button>
+                </div>
+                <img src="../res/img/Empty.png" alt="">
+            </div>
+            <div class="constructorElement ssd">
+                <div class="constructorElementText">
+                    <h1>SSD</h1>
+                    <div class="constructorElementCharacteristics">
+
+                        <div class="constructorElementCharacteristicsContainer">
+
+                        </div>
+                    </div>
+                    <p class="constructorPrice"></p>
+                    <button class="select" onclick="ssdsPopup()">Выбрать</button>
+                </div>
+                <img src="../res/img/Empty.png" alt="">
+            </div>
+            <div class="constructorElement psu">
+                <div class="constructorElementText">
+                    <h1>Блок питания</h1>
+                    <div class="constructorElementCharacteristics">
+
+                        <div class="constructorElementCharacteristicsContainer">
+
+                        </div>
+                    </div>
+                    <p class="constructorPrice"></p>
+                    <button class="select" onclick="psusPopup()">Выбрать</button>
+                </div>
+                <img src="../res/img/Empty.png" alt="">
+            </div>
+        </div>
+        <div class="total">
+            <p>Итого: 0 руб.</p>
+            <button onclick="addToCart()" disabled="disabled">Перейти к оформлению</button>
+        </div>
+    </main>
+    <footer>
+        <img src="../res/img/HARDPC.svg" alt="" class="logo">
+        <div class="numNCart">
+            <p>+7 (495) 120-35-20</p>
+        </div>
+    </footer>
+</body>
+<script src="../res/js/pages.js"></script>
+<script src="../res/js/constructor.js"></script>
+</html>
